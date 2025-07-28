@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        let a = 4
+        let b = 2
+
+        let result = a - b
+
+        console.log(a - b)
+        document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + `<h1>${"빼기"}${result}</h1>`
+
+        let result2 = a + b
+
+        console.log(a + b)
+        document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + `<h1>${"더하기"}${result2}</h1>`
+
+        let result3 = a * b
+
+        console.log(a * b)
+        document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + `<h1>${"곱하기"}${result3}}</h1>`
+
+        let result4 = a / b
+
+        console.log(a / b)
+        document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + `<h1>${"나누기"}${result4}</h1>`
+
+        let result5 = a % b
+
+        console.log(a % b)
+        document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + `<h1>${"나머지"}${result5}</h1>`
+
+        let result6 = ++a
+
+        console.log(++a)
+        document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + `<h1>${"++선행연산자"}${result6}</h1>`
+
+        let result7 = a++
+
+        console.log(a++)
+        document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + `<h1>${"후행연산자++"}${result7}</h1>`
+
+        let result8 = --a
+
+        console.log(--a)
+        document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + `<h1>${"--선행연산자"}${result8}</h1>`
+
+        let result9 = a--
+
+        console.log(a--)
+        document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + `<h1>${"--선행연산자"}${result9}</h1>`
+
+
+    </script>
+</body>
+
+</html>

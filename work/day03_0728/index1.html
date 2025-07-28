@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 연습</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        let name = "Kim";
+        let classRoom = 204;
+
+        let result = "이름: " + name + ", 반: " + classRoom;
+
+        console.log(name)
+        console.log("이름:" + name + ", 반:" + classRoom)
+
+        console.log(`${"이름은 "}${name}이고, 반은 ${classRoom}${"반이야"}`)
+        document.getElementById("result").innerHTML = result
+
+        // --------------------------
+
+        
+    </script>
+</body>
+</html>
