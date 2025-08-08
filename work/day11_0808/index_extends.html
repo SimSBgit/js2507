@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Car {
+            constructor (name) {
+                this.brand = name
+            }
+            present() {
+                return `브랜드: ${this.brand}`
+            }
+        }
+
+        const myBrand1 = new Car("포드")
+        const myBrand2 = new Car("현대")
+        const myBrand3 = new Car("벤츠")
+        
+        class Model extends Car {
+            constructor(name, mod){
+                super(name)
+                this.model = mod
+            }
+            show() {
+                return `{this.present}${this.model}`
+            }
+        }
+
+        const myCar1 = new Model("포드", "머스탱")
+        const mycar2 = new Model("르노", "XM3")
+        const myCar3 = new Model("기아", "K5")
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        // class Car {
+        //     constructor(name) {
+        //         this.brand = name
+        //     }
+        // }
+
+        // const mycar = new Car("Ford")
+
+        // document.writeln(mycar.brand)
+
+        class Bread {
+            constructor(source) {
+                this.source = source
+            }
+            present() {
+                return `$(this.source)빵 드세요`
+            }
+        }
+
+        const bread1 = new Bread("팥")
+        const bread2 = new Bread("크림")
+        const bread3 = new Bread("슈크림")
+        const bread4 = new Bread("딸기쨈")
+
+        const callbread1 = bread1.present()
+        const callbread2 = bread2.present()
+        const callbread3 = bread3.present()
+        const callbread4 = bread4.present()
+        
+    </script>
+</body>
+</html>

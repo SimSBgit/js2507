@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p><a href="./index_extends.html"><b>링크1</b></a></p>
+    <p><a href="./index3.html"><b>링크2</b></a></p>
+    
+<script>
+    class Water {
+        constructor(name) {
+            this.prop = name
+        }
+        present() {
+            return `${this.prop}`
+        }
+    }
+    const water1 = new Water("삼다수")
+
+    class Add extends Water {
+        constructor(name) {
+            super(name)
+            this.state = {
+                price: 1100,
+                from: "제주도"
+            }
+        }
+    }
+    const water0 = new Add("제주도")
+
+    class AddAtrr extends Water {
+        constructor(name, pri, fro) {
+            super(name)
+            this.price = pri
+            this.from = fro
+        }
+        show() {
+            return `${this.prop}${this.price}${this.from}`
+        }
+    }
+
+    const newwater = new AddAtrr("삼다수", 1100, "제주도")
+    
+</script>
+
+</body>
+
+</html>
